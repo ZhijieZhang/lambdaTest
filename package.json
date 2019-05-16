@@ -7,8 +7,7 @@
     "start": "npm run samples",
     "server": "node server.js $*",
     "samples": "npm run server samples",
-    "test": "nightwatch -c tests/nightwatch/config/local.config.js",
-    "test:lt": "nightwatch -c tests/nightwatch/config/lambdaTest.config.js -e chrome"
+    "test": "nightwatch -c lambdaTest.config.js -e chrome"
   },
   "devDependencies": {
     "archiver": "^3.0.0",
@@ -29,6 +28,7 @@
   "author": "PDFTron Systems Inc.",
   "dependencies": {
     "browserstack-local": "^1.4.0",
+    "dotenv": "^8.0.0",
     "lodash": "^4.17.11",
     "nightwatch": "^1.0.19"
   }
